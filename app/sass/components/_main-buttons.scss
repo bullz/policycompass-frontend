@@ -63,13 +63,29 @@ color:$general;
     }
   
 }
+
 .btn-danger {
-  background:$bk_2_2;
+  background:$bk_3;
+  // color:$bk_1_1;
 }
 .btn-warning {
-  background:$red;
+  background:$bk_3_1;
 }
-
+.btn-danger {
+}
+.btn-danger,
+.btn-warning {
+  $info:lighten($bk_3_1,20);
+  $info2:$bk_3_1;
+  background:linear-gradient(to bottom,$info, $info2);
+}
+.btn-danger {
+  $info:lighten($bk_3_1,20);
+  $info2:$bk_3;
+  background:linear-gradient(to bottom,$info, $info2);
+}
+// .btn-warning,
+// .btn-danger,
 .btn-info  {
   
   $info:lighten($bk_4_1,20);
@@ -82,7 +98,13 @@ color:$general;
   color:$gris_20;
   background:linear-gradient(to bottom,$info2, $info);
   color:white;
-  
+
+}
+.btn-danger {
+      // $info:$bk_3_1;
+  // $info2:lighten($bk_4_1,30);
+  // background:linear-gradient(to bottom,$gris_98,$bk_3_1 -30px);
+  // border-color:$bk_3;
 }
 .helpbutton {
   float:left;
@@ -119,6 +141,7 @@ opacity:.5;
 }
 .btn-clear:before {
   content: "\e60d";
+  // color:$bk_3;
 }
 .btn-xy:before {
   content: "\ea45";
@@ -139,6 +162,25 @@ opacity:.5;
 .btn-request:before {
   content: "\e618";
 }
+.btn-tree:before {
+  content: "\e9bc";
+}
+.btn-create:before {
+  content: "\e60f";
+}
+.btn-details {
+
+  &:before {
+    content: "\e611";
+    }
+     &.data:before {
+    content: "\f05a";
+      content: "\e616";
+}
+}
+
+
+ 
 
 /* after icons */
 
@@ -157,7 +199,10 @@ opacity:.5;
 }
 
 
-
+.pc-visualization-formcontrols {
+  @include clearfix();
+  margin:10px 0;
+}
 
 .button-group {
   // outline:2px solid black;
@@ -166,7 +211,7 @@ opacity:.5;
   padding:0 5px;
   overflow:hidden;
   float:left;
-  button {
+  .btn {
     
     border-radius:0;
    // border-right:none;

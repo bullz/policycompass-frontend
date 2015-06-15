@@ -60,7 +60,11 @@
     }
   }
   */
+
+}
+  .display-fields,
   .events-display-fields {
+  $labelWidth:25%;
     .form-group {
       overflow:hidden;
       padding:5px;
@@ -69,15 +73,13 @@
       margin:5px 0;
     }
     .field-label {
-      width:8em;
+        width:$labelWidth;
         float:left;
-        margin-right:-8em;
+        margin-right:-$labelWidth;
         text-align:right;
+        font-weight:bold;
     }
     .field-content {
-        padding-left:9em;
+        padding-left:$labelWidth + 2;
     }
   }
-}
-
-

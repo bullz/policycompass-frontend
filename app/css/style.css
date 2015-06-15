@@ -147,19 +147,26 @@ h5 {
 }
 
 /* line 37, ../sass/components/_normalize.scss */
+.legend-primary {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #72a9d8;
+}
+
+/* line 42, ../sass/components/_normalize.scss */
 h2.page-title {
   padding-top: 0;
   margin-top: 0;
 }
 
-/* line 43, ../sass/components/_normalize.scss */
+/* line 48, ../sass/components/_normalize.scss */
 h2.page-title,
 .subtitle {
   padding-right: 10px;
   padding-left: 10px;
 }
 
-/* line 46, ../sass/components/_normalize.scss */
+/* line 52, ../sass/components/_normalize.scss */
 h1, h2 {
   font-weight: 200;
 }
@@ -496,6 +503,13 @@ a:hover h3:before {
 /* line 97, ../sass/components/_pages-create.scss */
 .on_check {
   color: #666666;
+}
+
+/* line 2, ../sass/components/_main.scss */
+.legend-primary,
+.legend-default {
+  color: #9d5858;
+  border-color: #d1af9d;
 }
 
 /* line 1, ../sass/components/_navigation.scss */
@@ -912,17 +926,28 @@ header .container {
   outline: none;
 }
 
-/* line 66, ../sass/components/_main-buttons.scss */
+/* line 67, ../sass/components/_main-buttons.scss */
 .btn-danger {
-  background: #9dcf87;
+  background: #9d5858;
 }
 
-/* line 69, ../sass/components/_main-buttons.scss */
+/* line 71, ../sass/components/_main-buttons.scss */
 .btn-warning {
-  background: #963333;
+  background: #b88569;
 }
 
-/* line 73, ../sass/components/_main-buttons.scss */
+/* line 77, ../sass/components/_main-buttons.scss */
+.btn-danger,
+.btn-warning {
+  background: linear-gradient(to bottom, #d9bdae, #b88569);
+}
+
+/* line 82, ../sass/components/_main-buttons.scss */
+.btn-danger {
+  background: linear-gradient(to bottom, #d9bdae, #9d5858);
+}
+
+/* line 89, ../sass/components/_main-buttons.scss */
 .btn-info {
   background: linear-gradient(to bottom, #e5e5e5 0%, #cccccc 100%);
   border-color: #3177b3;
@@ -933,98 +958,130 @@ header .container {
   color: white;
 }
 
-/* line 87, ../sass/components/_main-buttons.scss */
+/* line 109, ../sass/components/_main-buttons.scss */
 .helpbutton {
   float: left;
 }
 
-/* line 93, ../sass/components/_main-buttons.scss */
+/* line 115, ../sass/components/_main-buttons.scss */
 .btn-revert:before {
   content: "\e984";
 }
 
-/* line 97, ../sass/components/_main-buttons.scss */
+/* line 119, ../sass/components/_main-buttons.scss */
 .btn-line:before {
   content: "\e99b";
 }
 
-/* line 101, ../sass/components/_main-buttons.scss */
+/* line 123, ../sass/components/_main-buttons.scss */
 .btn-pie:before {
   content: "\e99a";
 }
 
-/* line 105, ../sass/components/_main-buttons.scss */
+/* line 127, ../sass/components/_main-buttons.scss */
 .btn-bars:before {
   content: "\e99c";
 }
 
-/* line 109, ../sass/components/_main-buttons.scss */
+/* line 131, ../sass/components/_main-buttons.scss */
 .btn-parent:after {
   content: "\ea1c";
   opacity: .5;
 }
 
-/* line 114, ../sass/components/_main-buttons.scss */
+/* line 136, ../sass/components/_main-buttons.scss */
 .helpbutton .btn:before {
   content: "\e617";
 }
 
-/* line 117, ../sass/components/_main-buttons.scss */
+/* line 139, ../sass/components/_main-buttons.scss */
 .btn-rotate:before {
   content: "\e984";
 }
 
-/* line 120, ../sass/components/_main-buttons.scss */
+/* line 142, ../sass/components/_main-buttons.scss */
 .btn-clear:before {
   content: "\e60d";
 }
 
-/* line 123, ../sass/components/_main-buttons.scss */
+/* line 146, ../sass/components/_main-buttons.scss */
 .btn-xy:before {
   content: "\ea45";
 }
 
-/* line 126, ../sass/components/_main-buttons.scss */
+/* line 149, ../sass/components/_main-buttons.scss */
 .btn-file:before {
   content: "\e92f";
 }
 
-/* line 129, ../sass/components/_main-buttons.scss */
+/* line 152, ../sass/components/_main-buttons.scss */
 .btn-prev:before {
   content: "\e601";
 }
 
-/* line 132, ../sass/components/_main-buttons.scss */
+/* line 155, ../sass/components/_main-buttons.scss */
 .btn-validate:before {
   content: "\e604";
 }
 
-/* line 136, ../sass/components/_main-buttons.scss */
+/* line 159, ../sass/components/_main-buttons.scss */
 .btn-add:before {
   content: "\e608";
 }
 
-/* line 139, ../sass/components/_main-buttons.scss */
+/* line 162, ../sass/components/_main-buttons.scss */
 .btn-request:before {
   content: "\e618";
 }
 
+/* line 165, ../sass/components/_main-buttons.scss */
+.btn-tree:before {
+  content: "\e9bc";
+}
+
+/* line 168, ../sass/components/_main-buttons.scss */
+.btn-create:before {
+  content: "\e60f";
+}
+
+/* line 173, ../sass/components/_main-buttons.scss */
+.btn-details:before {
+  content: "\e611";
+}
+/* line 176, ../sass/components/_main-buttons.scss */
+.btn-details.data:before {
+  content: "\f05a";
+  content: "\e616";
+}
+
 /* after icons */
-/* line 145, ../sass/components/_main-buttons.scss */
+/* line 187, ../sass/components/_main-buttons.scss */
 .btn-next:after {
   content: "\e602";
 }
 
-/* line 152, ../sass/components/_main-buttons.scss */
+/* line 194, ../sass/components/_main-buttons.scss */
 .btn:before {
   opacity: .7;
 }
-/* line 154, ../sass/components/_main-buttons.scss */
+/* line 196, ../sass/components/_main-buttons.scss */
 .btn:before:hover {
   opacity: 1;
 }
 
-/* line 162, ../sass/components/_main-buttons.scss */
+/* line 202, ../sass/components/_main-buttons.scss */
+.pc-visualization-formcontrols {
+  margin: 10px 0;
+}
+/* line 184, ../sass/_custom.scss */
+.pc-visualization-formcontrols:after {
+  visibility: hidden;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 207, ../sass/components/_main-buttons.scss */
 .button-group {
   margin-right: 10px;
   display: inline-block;
@@ -1032,26 +1089,26 @@ header .container {
   overflow: hidden;
   float: left;
 }
-/* line 169, ../sass/components/_main-buttons.scss */
-.button-group button {
+/* line 214, ../sass/components/_main-buttons.scss */
+.button-group .btn {
   border-radius: 0;
   float: left;
   margin: 0;
 }
-/* line 176, ../sass/components/_main-buttons.scss */
-.button-group button:first-of-type {
+/* line 221, ../sass/components/_main-buttons.scss */
+.button-group .btn:first-of-type {
   border-radius: 6px 0 0 6px;
 }
-/* line 179, ../sass/components/_main-buttons.scss */
-.button-group button:last-of-type {
+/* line 224, ../sass/components/_main-buttons.scss */
+.button-group .btn:last-of-type {
   border-radius: 0 6px 6px 0;
 }
-/* line 182, ../sass/components/_main-buttons.scss */
-.button-group button:not(:last-of-type) {
+/* line 227, ../sass/components/_main-buttons.scss */
+.button-group .btn:not(:last-of-type) {
   border-right: none;
 }
 
-/* line 189, ../sass/components/_main-buttons.scss */
+/* line 234, ../sass/components/_main-buttons.scss */
 .navigation-steps {
   list-style-type: none;
   list-style-image: none;
@@ -1061,39 +1118,39 @@ header .container {
   top: 30px;
   right: 20px;
 }
-/* line 194, ../sass/components/_main-buttons.scss */
+/* line 239, ../sass/components/_main-buttons.scss */
 .navigation-steps li {
   float: left;
 }
-/* line 196, ../sass/components/_main-buttons.scss */
+/* line 241, ../sass/components/_main-buttons.scss */
 .navigation-steps li a {
   float: left;
   margin: 0;
   border-radius: 0;
 }
-/* line 201, ../sass/components/_main-buttons.scss */
+/* line 246, ../sass/components/_main-buttons.scss */
 .navigation-steps li:first-of-type a {
   border-radius: 6px 0 0 6px;
 }
-/* line 204, ../sass/components/_main-buttons.scss */
+/* line 249, ../sass/components/_main-buttons.scss */
 .navigation-steps li:last-of-type a {
   border-radius: 0 6px 6px 0;
 }
-/* line 207, ../sass/components/_main-buttons.scss */
+/* line 252, ../sass/components/_main-buttons.scss */
 .navigation-steps li:not(:last-of-type) a {
   border-right: none;
 }
 
-/* line 213, ../sass/components/_main-buttons.scss */
+/* line 258, ../sass/components/_main-buttons.scss */
 .multiSelect {
   padding: 0;
 }
-/* line 215, ../sass/components/_main-buttons.scss */
+/* line 260, ../sass/components/_main-buttons.scss */
 .multiSelect .buttonLabel {
   padding: 0 0 0 5px;
 }
 
-/* line 220, ../sass/components/_main-buttons.scss */
+/* line 265, ../sass/components/_main-buttons.scss */
 .multiSelect > button {
   padding: 5px 10px 3px;
   background: linear-gradient(to bottom, #9ac1e3, #72a9d8);
@@ -1102,7 +1159,7 @@ header .container {
   min-height: inherit !important;
   font-size: 1em;
 }
-/* line 230, ../sass/components/_main-buttons.scss */
+/* line 275, ../sass/components/_main-buttons.scss */
 .multiSelect > button:hover {
   background: linear-gradient(to bottom, #72a9d8, #9ac1e3);
 }
@@ -2696,23 +2753,28 @@ footer {
   margin-top: 8px;
   width: 90%;
 }
-/* line 64, ../sass/components/_modal.scss */
-.modal-content .events-display-fields .form-group {
+
+/* line 68, ../sass/components/_modal.scss */
+.display-fields .form-group,
+.events-display-fields .form-group {
   overflow: hidden;
   padding: 5px;
   background: #f2f2f2;
   margin: 5px 0;
 }
-/* line 71, ../sass/components/_modal.scss */
-.modal-content .events-display-fields .field-label {
-  width: 8em;
+/* line 75, ../sass/components/_modal.scss */
+.display-fields .field-label,
+.events-display-fields .field-label {
+  width: 25%;
   float: left;
-  margin-right: -8em;
+  margin-right: -25%;
   text-align: right;
+  font-weight: bold;
 }
-/* line 77, ../sass/components/_modal.scss */
-.modal-content .events-display-fields .field-content {
-  padding-left: 9em;
+/* line 82, ../sass/components/_modal.scss */
+.display-fields .field-content,
+.events-display-fields .field-content {
+  padding-left: 27%;
 }
 
 /* Fix */
